@@ -23,7 +23,7 @@ const CheckIns = () => {
 
   return (
     <ScrollView style={styles.container}>
-     {data.check_in.slice(0, 5).map(checkIn => (  // slice to get the first 7 users
+     {data.check_in.slice(0, 5).map(checkIn => (  
         <View key={checkIn.id} style={styles.itemContainer}>
           <Image 
             source={{ uri: checkIn.image_url }} 
@@ -33,7 +33,6 @@ const CheckIns = () => {
            <Image 
             source={require('../../assets/users.png')} 
             style={styles.userImageSmall} 
-            // resizeMode="cover"
           />
           <Text style={styles.itemText}>ID: {checkIn.id}</Text>
           <Text style={styles.itemText}>Name: {checkIn.name}</Text>

@@ -21,8 +21,8 @@ const MyTabs = () => {
             ),
           })}
           tabBarOptions={{
-            tabStyle: {paddingBottom: 0, paddingTop: 0}, // To remove extra padding
-            indicatorStyle: {backgroundColor: 'black'}, // Optional: To style the indicator
+            tabStyle: {paddingBottom: 0, paddingTop: 0}, 
+            indicatorStyle: {backgroundColor: 'black'}, 
           }}>
           <Tab.Screen name="Submit" component={Submit} />
           <Tab.Screen name="CheckIns" component={CheckIns} />

@@ -37,12 +37,10 @@ const Submit = ({navigation}) => {
       },
     })
       .then(() => {
-        // Clear the inputs
         setName('');
         setComment('');
         setImageUrl('');
 
-        // Navigate to CheckIns screen
         navigation.navigate('CheckIns');
       })
       .catch(err => {
@@ -98,7 +96,6 @@ const styles = StyleSheet.create({
     borderRadius: 4,
   },
   btnContainer: {
-    // padding: 16,
     width: '92%',
     alignSelf: 'center',
   },
